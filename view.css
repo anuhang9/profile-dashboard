@@ -1,0 +1,162 @@
+:root{
+    --color1 : #e9e7e7;
+    --color2 : #ecf0f3;
+    --color3 : #bfc1c3;
+    --color4 : #ffffff;
+    --color5 : gray;
+    --color6 : #000000;
+    --blend : darken;
+}
+.dark-theme{
+    --color1 : #1d1d1d;
+    --color2 : #121213;
+    --color3 : rgb(14, 13, 13);
+    --color4 : #0e0d0d;
+    --color5 : gray;
+    --color6 : #ffffff;
+    --blend : multiply;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+}
+.main{
+    height: 520px;
+    width: 400px;
+    background-color: var(--color2);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: 14px 14px 14px var(--color3), -14px -14px 20px var(--color4);
+}
+.option{
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(circle, var(--color5) 3px, var(--color2) 3px);
+    background-size: 30px 10px;
+    border-style: hidden;
+    cursor: pointer;
+    float: left;
+    border-radius: 50px;
+}
+.react{
+    background-color: var(--color2);
+    border-style: none;
+    float: right;
+    font-size: 25px;
+    color: var(--color5);
+}
+.react:hover{
+    color: #ed0707;  
+}
+.profile-picture img{
+    height: 140px;
+    mix-blend-mode: var(--blend);
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+.word{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.word h2, p{
+    color: var(--color6);
+}
+.word h3{
+    color: red;
+    text-shadow: 0px 0px 4px var(--color5);
+}
+.word h3{
+    color: red;
+    text-shadow: 0px 0px 4px var(--color5);
+}
+.content p, h4{
+    color: var(--color6);
+}
+.main-button{
+    padding: 10px;
+    width: 300px;
+    background-color: #b61111;
+    text-align: center;
+    border-style: none;
+    border-radius: 30px;
+    color: var(--color4);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0 0 15px  #5e2222;
+}
+.main-button:hover{
+    color: var(--color6);
+}
+.social-media{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px;
+}
+.content{
+    height: 120px;
+    width: 120px;
+    text-align:center;
+    margin-top: 20px;
+}
+.content i{
+    font-size: 40px;
+}
+.fa-facebook{
+    color: #1e1eae;
+    box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+.fa-facebook:hover{
+    font-size: 45px;
+}
+.fa-tiktok{
+    text-shadow: 3px 3px 2px #ff0066;
+    color: var(--color6);
+}
+.fa-tiktok:hover{
+    font-size: 45px
+}
+.fa-twitter{
+    color: #2f5fee;
+}
+.fa-twitter:hover{
+    font-size: 45px;
+}
+.content p{
+    font-size: 14px;
+}
+.mouse{
+    cursor: pointer;
+}
+.light{
+    padding: 15px;
+    position: relative;
+    top: -10px;
+    right: 130px;
+    border-style: none;
+    background-color: var(--color1);
+    text-shadow: 2px 2px 3px gray;
+    cursor: pointer;
+    box-shadow: -4px -4px 8px 4px var(--color1), inset -4px -4px 8px 4px var(--color3);
+    border-radius: 50px;
+}
+.light:hover{
+    border-radius: 50px;
+    background-color: var(--color1);
+    box-shadow: 4px 4px 8px 4px var(--color2), inset 14px 14px 20px var(--color3);
+}
